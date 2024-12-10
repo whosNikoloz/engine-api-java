@@ -1,0 +1,16 @@
+com\example\EngineApi\repository\BranchRepository.class
+com\example\EngineApi\repository\custom\impl\CustomProductRepositoryImpl.class
+com\example\EngineApi\controller\BranchController.class
+com\example\EngineApi\services\impl\ProductServiceImpl.class
+com\example\EngineApi\services\impl\BranchServiceImpl.class
+com\example\EngineApi\repository\ProductRepository.class
+com\example\EngineApi\dto\ProductsDto.class
+com\example\EngineApi\entity\ApiResponse.class
+com\example\EngineApi\dto\BranchDto.class
+com\example\EngineApi\services\BranchService.class
+com\example\EngineApi\controller\ProductController.class
+com\example\EngineApi\EngineApiApplication.class
+com\example\EngineApi\repository\custom\CustomProductRepository.class
+com\example\EngineApi\services\ProductService.class
+com\example\EngineApi\entity\Branch.class
+com\example\EngineApi\entity\Product.class

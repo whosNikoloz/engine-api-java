@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\controller\BranchController.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\controller\ProductController.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\dto\BranchDto.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\dto\ProductsDto.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\EngineApiApplication.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\entity\ApiResponse.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\entity\Branch.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\entity\Product.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\repository\BranchRepository.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\repository\custom\CustomProductRepository.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\repository\custom\impl\CustomProductRepositoryImpl.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\repository\ProductRepository.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\services\BranchService.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\services\impl\BranchServiceImpl.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\services\impl\ProductServiceImpl.java
+C:\Users\User\Desktop\Projects\JavaFinal\EngineApi\src\main\java\com\example\EngineApi\services\ProductService.java
