@@ -64,7 +64,7 @@ CREATE TABLE Product (
     product_name_ka VARCHAR(255) NOT NULL,  -- Georgian name
     product_Name_en VARCHAR(255) NOT NULL,  -- English name
     price DECIMAL(10, 2) NOT NULL,        -- Price with precision
-    description TEXT,                     -- Product description
+    description VARCHAR(255) NOT NULL,                     -- Product description
     product_logo VARCHAR(255),             -- Path to product logo
     branch_id BIGINT,                     -- Foreign key to Branch
     CONSTRAINT fk_branch FOREIGN KEY (branch_id) REFERENCES Branch(branch_id) ON DELETE CASCADE

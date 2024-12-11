@@ -1,5 +1,6 @@
 package com.example.EngineApi.controller;
 
+import com.example.EngineApi.dto.ImageRequest;
 import com.example.EngineApi.dto.ProductsDto;
 import com.example.EngineApi.entity.ApiResponse;
 import com.example.EngineApi.entity.Product;
@@ -54,6 +55,16 @@ public class ProductController {
             return ResponseEntity.ok(new ApiResponse(true, product));
         } catch (Exception e) {
             return ResponseEntity.status(500).body(new ApiResponse(false, e));
+        }
+    }
+
+    @PostMapping("/image/{id}")
+    public ResponseEntity<?> uploadProductImage(@PathVariable Long id, @RequestBody ImageRequest imageRequest) {
+        try {
+            productService.changeProductLogo(id, imageRequest.getPictureUrl());
+            return ResponseEntity.ok(new ApiResponse(true, "Image uploaded successfully."));
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(new ApiResponse(false, "Error uploading image: " + e.getMessage()));
         }
     }
 

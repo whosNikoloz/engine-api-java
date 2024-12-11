@@ -46,7 +46,8 @@ public class BranchServiceImpl implements BranchService {
             branch.setBranchNameEn(updatedBranch.getBranchNameEn());
             branch.setDescriptionKa(updatedBranch.getDescriptionKa());
             branch.setDescriptionEn(updatedBranch.getDescriptionEn());
-            return branchRepository.save(branch);
+            branchRepository.save(branch);
+            return branch;
         }
         return null;
     }

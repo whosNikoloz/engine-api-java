@@ -13,13 +13,11 @@ public interface ProductService {
 
     Product updateProduct(Long productId, ProductsDto productData);
 
-    boolean removeProduct(Long productId, String logoPath);
-
     Product getProduct(Long Id);
 
     void deleteProduct(Long Id);
 
     Product addProduct(Long branch_id, ProductsDto productData);
 
-    boolean changeProductLogo(String NewLogo, Long productId);
+    boolean changeProductLogo(Long productId, String ImageUrl);
 }

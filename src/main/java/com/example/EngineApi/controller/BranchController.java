@@ -56,7 +56,7 @@ public class BranchController {
         try {
             Branch branch = branchService.updateBranch(id, updatedBranch);
             if (branch != null) {
-                return ResponseEntity.ok(new ApiResponse(true, "Branch updated successfully."));
+                return ResponseEntity.ok(new ApiResponse(true, branch));
             } else {
                 return ResponseEntity.status(404).body(new ApiResponse(false, "Branch not found."));
             }

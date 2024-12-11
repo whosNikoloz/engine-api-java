@@ -10,6 +10,7 @@ import com.example.EngineApi.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -30,8 +31,10 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<Product> getProductsByBranchId(Long branchId) {
         Branch ex = branchService.getBranchById(branchId);
-        List<Product> ans = ex.getProducts();
-        return ans; //custom
+        if (ex != null) {
+            return ex.getProducts(); // Return the list of products associated with the branch
+        }
+        return new ArrayList<>(); // Return an empty list if the branch is not found
     }
 
     @Override
@@ -52,15 +55,6 @@ public class ProductServiceImpl implements ProductService {
         productRepository.deleteById(Id);
     }
 
-    @Override
-    public boolean removeProduct(Long productId, String logoPath) {
-        Optional<Product> product = productRepository.findById(productId);
-        if (product.isPresent()) {
-            productRepository.delete(product.get());
-            return true;
-        }
-        return false;
-    }
 
     @Override
     public Product getProduct(Long id) {
@@ -76,6 +70,7 @@ public class ProductServiceImpl implements ProductService {
         newProduct.setProductNameKa(productData.getProductNameKa());
         newProduct.setProductNameEn(productData.getProductNameEn());
         newProduct.setPrice(productData.getPrice());
+        newProduct.setDescription(productData.getDescription());
         newProduct.setProductLogo(productData.getProductLogo());
         newProduct.setBranch(exBranch);
 
@@ -83,7 +78,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public boolean changeProductLogo(String NewLogo, Long productId) {
+    public boolean changeProductLogo(Long productId, String NewLogo) {
         Optional<Product> productOpt = productRepository.findById(productId);
             Product product = productOpt.get();
             product.setProductLogo(NewLogo);
